@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".CadastrarEspecialidadeActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutCadEspec"
+        android:layout_width="match_parent"
+        android:layout_height="454dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewDataObt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            tools:text="Data de Obtenção" />
+
+        <EditText
+            android:id="@+id/editTextDataObt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:inputType="date" />
+
+        <TextView
+            android:id="@+id/textViewInstituicao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Instituição" />
+
+        <EditText
+            android:id="@+id/editTextInstituicao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewCertificado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Certificado" />
+
+            <Button
+                android:id="@+id/buttonCarrgar"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Carregar" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewPreço"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Preço" />
+
+        <EditText
+            android:id="@+id/editTextPreco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/textViewTipoEspec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Especialidade" />
+
+        <Spinner
+            android:id="@+id/spinnerTipoEspec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearBotoesCadEspec"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linearLayoutCadEspec"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonCancelCadEspec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="Cancelar" />
+
+        <Button
+            android:id="@+id/buttonSalvarCadEspec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="Salvar" />
+    </LinearLayout>
+</RelativeLayout>

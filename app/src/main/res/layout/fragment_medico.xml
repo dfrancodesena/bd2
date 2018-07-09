@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelattiveLayoutMedico1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".MedicoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutMedico1"
+        android:layout_width="match_parent"
+        android:layout_height="456dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewCRM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CRM" />
+
+        <EditText
+            android:id="@+id/editTextCRM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textViewAnoGrad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ano de Graduação" />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/textViewInstituicao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Instituição" />
+
+        <EditText
+            android:id="@+id/editTextInstituicao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewCarregarDiploma"
+                android:layout_width="181dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Diploma:" />
+
+            <Button
+                android:id="@+id/buttonCarregarDiploma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Carregar" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
