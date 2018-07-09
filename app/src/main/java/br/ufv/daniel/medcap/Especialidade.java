@@ -35,6 +35,7 @@ public class Especialidade {
         return nome;
     }
 
+
     public void setNome(String nome) {
         this.nome = nome;
     }
@@ -82,8 +83,13 @@ public class Especialidade {
     public boolean isePrincipal() {
         return ePrincipal;
     }
-
+    public boolean getEPrincipal(){
+        return ePrincipal;
+    }
     public void setePrincipal(boolean ePrincipal) {
         this.ePrincipal = ePrincipal;
+    }
+
+    public Especialidade() {
     }
 }

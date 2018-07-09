@@ -13,6 +13,6 @@ public class ListadeEspecialidadesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_listade_especialidades);
         ListView lv = findViewById(R.id.listViewEspec);
         AdapterEspecialidade a;
-        lv.setAdapter(a);
+       // lv.setAdapter(a);
     }
 }

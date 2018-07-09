@@ -10,11 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".ListadeMedicosActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".CadastrarEspecialidadeActivity"
@@ -26,7 +22,15 @@
             android:name=".CadastroEnderecoActivity"
             android:label="Cadastro de Endereço" />
         <activity android:name=".ListadeEspecialidadesActivity" />
-        <activity android:name=".CadastrarTipoEspecialidadeActivity"  android:label=".Novo tipo de Especialidade"/>
+        <activity
+            android:name=".CadastrarTipoEspecialidadeActivity"
+            android:label=".Novo tipo de Especialidade" />
+        <activity android:name=".MainActivity"
+            > <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter></activity>
     </application>
 
 </manifest>

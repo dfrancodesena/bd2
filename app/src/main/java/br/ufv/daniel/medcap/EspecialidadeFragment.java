@@ -33,7 +33,7 @@ public class EspecialidadeFragment extends Fragment {
     private String mParam1;
     private String mParam2;
     public List<Especialidade> lEspec = new ArrayList<>();
-    Especialidade e = new Especialidade(1,"Cardiologista",false);
+    Especialidade e = new Especialidade();
     private OnFragmentInteractionListener mListener;
 
     public EspecialidadeFragment() {
