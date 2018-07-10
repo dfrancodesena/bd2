@@ -43,7 +43,7 @@ public class AdapterEspecialidade extends BaseAdapter {
         Especialidade especialidade = especialidades.get(position);
 
         TextView nEspecialidade = v.findViewById(R.id.textViewNomeEspec);
-        RadioButton rb = v.findViewById(R.id.radioButton);
+        RadioButton rb = v.findViewById(R.id.radioButtonEstrela);
         nEspecialidade.setText(especialidade.getNome());
         if(especialidade.getEPrincipal()){
             rb.setChecked(true);

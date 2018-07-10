@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AtendimentoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewDiagnosticoA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Diagnóstico" />
+
+        <EditText
+            android:id="@+id/editText8DiagnosticoA"
+            android:layout_width="match_parent"
+            android:layout_height="118dp"
+            android:ems="10"
+            android:inputType="textImeMultiLine|textPersonName"
+            android:singleLine="false" />
+
+        <TextView
+            android:id="@+id/textViewExamesA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exames" />
+
+        <EditText
+            android:id="@+id/editText9"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:id="@+id/textViewMedicamentosA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medicamentos" />
+
+        <EditText
+            android:id="@+id/editText11"
+            android:layout_width="match_parent"
+            android:layout_height="211dp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+
+    </LinearLayout>
+</RelativeLayout>
