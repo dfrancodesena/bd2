@@ -9,28 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ListadeMedicosActivity">
-
-        </activity>
+        <activity android:name=".view.activity.ListadeMedicosActivity"></activity>
         <activity
-            android:name=".CadastrarEspecialidadeActivity"
+            android:name=".view.activity.CadastrarEspecialidadeActivity"
             android:label="Cadastro de Especialidade" />
         <activity
-            android:name=".CadastroMedicoActivity"
+            android:name=".view.activity.CadastroMedicoActivity"
             android:label="Cadastro de Médico" />
         <activity
-            android:name=".CadastroEnderecoActivity"
+            android:name=".view.activity.CadastroEnderecoActivity"
             android:label="Cadastro de Endereço" />
-        <activity android:name=".ListadeEspecialidadesActivity" />
+        <activity android:name=".view.activity.ListadeEspecialidadesActivity" />
         <activity
-            android:name=".CadastrarTipoEspecialidadeActivity"
+            android:name=".view.activity.CadastrarTipoEspecialidadeActivity"
             android:label=".Novo tipo de Especialidade" />
-        <activity android:name=".MainActivity"
-            > <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".view.activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter></activity>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.activity.CadastroAgendamentoActivity"></activity>
     </application>
 
 </manifest>
