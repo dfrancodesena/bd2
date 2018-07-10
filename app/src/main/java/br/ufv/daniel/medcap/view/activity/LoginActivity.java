@@ -33,6 +33,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void onCriarClick(View view){
-        
+        Intent it = new Intent(this,EscolhaCadastroActivity.class);
+        startActivity(it);
     }
 }

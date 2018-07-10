@@ -9,13 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.activity.ListadeMedicosActivity"></activity>
+        <activity android:name=".view.activity.ListadeMedicosActivity" />
         <activity
             android:name=".view.activity.CadastrarEspecialidadeActivity"
             android:label="Cadastro de Especialidade" />
-        <activity
-            android:name=".view.activity.CadastroMedicoActivity"
-            android:label="Cadastro de Médico" />
         <activity
             android:name=".view.activity.CadastroEnderecoActivity"
             android:label="Cadastro de Endereço" />
@@ -30,7 +27,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.activity.CadastroAgendamentoActivity"></activity>
+        <activity android:name=".view.activity.CadastroAgendamentoActivity" />
+        <activity
+            android:name=".view.activity.CadastroMedicoActivity"
+            android:label="@string/title_activity_cadastro_medico"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".view.activity.EscolhaCadastroActivity"></activity>
     </application>
 
 </manifest>

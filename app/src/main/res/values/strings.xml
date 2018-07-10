@@ -10,4 +10,10 @@
     <string name="senha_login_hint">Senha</string>
     <string name="entrar_login_button">Acessar</string>
     <string name="subtitulo_splash">Lorem ipslon</string>
+    <string name="title_activity_cadastro_medico">CadastroMedicoActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="medico_choice">Cadastro de Médico</string>
+    <string name="cliente_choice">Cadastro de Cliente</string>
+    <string name="escolha_text">Qual tipo de cadastro?</string>
 </resources>

@@ -98,7 +98,7 @@
                 android:background="@color/colorAccent"
                 android:onClick="onCriarClick"
                 android:text="@string/criar_conta_button"
-                android:textColor="@color/colorPrimaryLight"
+                android:textColor="@color/colorPrimaryDark"
                 android:textSize="18sp" />
         </LinearLayout>
     </LinearLayout>
