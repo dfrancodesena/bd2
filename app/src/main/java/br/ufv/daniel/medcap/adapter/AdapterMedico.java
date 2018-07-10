@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
 import java.util.List;
@@ -37,11 +38,12 @@ public class AdapterMedico extends BaseAdapter {
     public View getView(int position, View converView, ViewGroup parent) {
         View v = act.getLayoutInflater().inflate(R.layout.item_medico_layout, parent, false);
         Medico medico = medicos.get(position);
-
         TextView nome = v.findViewById(R.id.textViewNomeMedico);
         TextView nomeEspec = v.findViewById(R.id.textViewEspecialidade);
         nome.setText(medico.getNome());
         nomeEspec.setText(medico.getEspecialidade().getNome());
+        RatingBar ratingBar = v.findViewById(R.id.ratingBar3);
+        ratingBar.setRating(medicos.get(position).getAvalicao());
         return v;
     }
 

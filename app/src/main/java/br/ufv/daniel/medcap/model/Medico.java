@@ -6,6 +6,7 @@ public class Medico {
     private String Nome;
     private Especialidade especialidade;
     private ArrayList<Especialidade> especialidades;
+    private int avalicao;
     int id;
 
     public String getNome() {
@@ -43,5 +44,13 @@ public class Medico {
 
     public void setEspecialidades(ArrayList<Especialidade> especialidades) {
         this.especialidades = especialidades;
+    }
+
+    public int getAvalicao() {
+        return avalicao;
+    }
+
+    public void setAvalicao(int avalicao) {
+        this.avalicao = avalicao;
     }
 }
