@@ -28,8 +28,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".view.activity.CadastroAgendamentoActivity" />
+        <activity android:name=".view.activity.LoginActivity" />
         <activity
             android:name=".view.activity.CadastroMedicoActivity"
+            android:label="@string/title_activity_cadastro_medico"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".view.activity.CadastroClienteActivity"
             android:label="@string/title_activity_cadastro_medico"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".view.activity.EscolhaCadastroActivity"></activity>

@@ -66,15 +66,18 @@ public class EspecialidadeFragment extends Fragment {
 
     }
 
-    public AdapterEspecialidade a = new AdapterEspecialidade(lEspec,this.getActivity());
+    public AdapterEspecialidade a;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_especialidade, container, false);
+
         // Inflate the layout for this fragment
-        ListView l = container.findViewById(R.id.listaEspecialidade);
+        a = new AdapterEspecialidade(lEspec,this.getActivity());
+        ListView l = view.findViewById(R.id.listaEspecialidade);
         l.setAdapter(a);
-        return inflater.inflate(R.layout.fragment_especialidade, container, false);
+        return view;
     }
 
     // TODO: Rename method, update argument and hook method into UI event

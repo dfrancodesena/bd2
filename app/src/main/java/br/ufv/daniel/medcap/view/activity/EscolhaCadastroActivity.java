@@ -18,6 +18,13 @@ public class EscolhaCadastroActivity extends AppCompatActivity {
     public void onMedicoClick(View view){
         Intent it = new Intent(this, CadastroMedicoActivity.class);
         startActivity(it);
+        finish();
+    }
+
+    public void onClienteClick(View view){
+        Intent it = new Intent(this, CadastroClienteActivity.class);
+        startActivity(it);
+        finish();
     }
 
 }

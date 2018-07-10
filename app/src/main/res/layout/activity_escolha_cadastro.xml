@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorBackground"
     android:orientation="vertical"
+    android:padding="20dp"
     android:theme="@android:style/Theme.Material.NoActionBar"
     tools:context=".view.activity.EscolhaCadastroActivity">
 
@@ -24,6 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:background="@color/colorAccent"
+        android:onClick="onMedicoClick"
         android:text="@string/medico_choice"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="24sp" />
@@ -34,6 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:background="@color/colorAccent"
+        android:onClick="onClienteClick"
         android:text="@string/cliente_choice"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="24sp" />

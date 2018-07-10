@@ -1,13 +1,15 @@
 package br.ufv.daniel.medcap.view.activity;
 
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
+import android.content.res.Resources.Theme;
 import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-
-import android.support.v4.app.Fragment;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.ThemedSpinnerAdapter;
+import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,22 +18,19 @@ import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
-import android.content.Context;
-import android.support.v7.widget.ThemedSpinnerAdapter;
-import android.content.res.Resources.Theme;
-
 import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import br.ufv.daniel.medcap.R;
+import br.ufv.daniel.medcap.view.fragment.EnderecoFragment;
 import br.ufv.daniel.medcap.view.fragment.EspecialidadeFragment;
-import br.ufv.daniel.medcap.view.fragment.MedicoFragment;
+import br.ufv.daniel.medcap.view.fragment.MetodoPagamentoFragment;
 import br.ufv.daniel.medcap.view.fragment.PessoaFragment;
 import br.ufv.daniel.medcap.view.fragment.UsuarioFragment;
 
-public class CadastroMedicoActivity extends AppCompatActivity implements EspecialidadeFragment.OnFragmentInteractionListener,PessoaFragment.OnFragmentInteractionListener, UsuarioFragment.OnFragmentInteractionListener{
+public class CadastroClienteActivity extends AppCompatActivity implements EnderecoFragment.OnFragmentInteractionListener,PessoaFragment.OnFragmentInteractionListener, UsuarioFragment.OnFragmentInteractionListener, MetodoPagamentoFragment.OnFragmentInteractionListener{
 
     private Button botaoAnterior;
     private Button botaoProximo;
@@ -44,8 +43,9 @@ public class CadastroMedicoActivity extends AppCompatActivity implements Especia
         setContentView(R.layout.activity_cadastro);
         fragmentList.add(PessoaFragment.newInstance());
         fragmentList.add(new UsuarioFragment());
-        fragmentList.add(new MedicoFragment());
-        fragmentList.add(new EspecialidadeFragment());
+        fragmentList.add(new EnderecoFragment());
+        fragmentList.add(new MetodoPagamentoFragment());
+        fragmentList.add(new MetodoPagamentoFragment());
 
         botaoAnterior = findViewById(R.id.botao_anterior);
         botaoProximo = findViewById(R.id.botao_proximo);
@@ -61,8 +61,9 @@ public class CadastroMedicoActivity extends AppCompatActivity implements Especia
                 new String[]{
                         "Dados Pessoais",
                         "Dados de Login",
-                        "Dados Profissão",
-                        "Especialidades"
+                        "Endereço",
+                        "Dependentes",
+                        "Métodos de Pagamento"
                 }));
 
         spinner.setOnItemSelectedListener(new OnItemSelectedListener() {
@@ -139,11 +140,11 @@ public class CadastroMedicoActivity extends AppCompatActivity implements Especia
 
 
     private static class MyAdapter extends ArrayAdapter<String> implements ThemedSpinnerAdapter {
-        private final ThemedSpinnerAdapter.Helper mDropDownHelper;
+        private final Helper mDropDownHelper;
 
         public MyAdapter(Context context, String[] objects) {
             super(context, android.R.layout.simple_list_item_1, objects);
-            mDropDownHelper = new ThemedSpinnerAdapter.Helper(context);
+            mDropDownHelper = new Helper(context);
         }
 
         @Override

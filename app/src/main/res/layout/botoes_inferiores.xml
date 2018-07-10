@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/botao_anterior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:onClick="onAnteriorClick"
+        android:text="@string/anterior_button"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/botao_proximo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:onClick="onProximoClick"
+        android:text="@string/proximo_button"
+        android:textSize="24sp" />
+
+</LinearLayout>

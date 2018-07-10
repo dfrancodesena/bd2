@@ -13,8 +13,8 @@ public class ListadeEspecialidadesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_listade_especialidades);
-        ListView lv = findViewById(R.id.listViewEspec);
-        AdapterEspecialidade a;
+      // ListView lv = findViewById(R.id.listViewEspec);
+        //AdapterEspecialidade a;
        // lv.setAdapter(a);
     }
 }

@@ -16,4 +16,11 @@
     <string name="medico_choice">Cadastro de Médico</string>
     <string name="cliente_choice">Cadastro de Cliente</string>
     <string name="escolha_text">Qual tipo de cadastro?</string>
+    <string name="proximo_button">Próximo</string>
+    <string name="anterior_button">Anterior</string>
+    <string name="cancelar_button">Cancelar</string>
+    <string name="concluir_button">Concluir</string>
+    <string name="sim_button">Sim</string>
+    <string name="nao_button">Não</string>
+    <string name="mensagem_cancelar_cadastro">Deseja Cancelar o Cadastro?</string>
 </resources>
